@@ -43,7 +43,7 @@ public class ValidationItemControllerV1 {
     }
     //실제 저장 부분
     @PostMapping("/add")
-    public String addItem(@ModelAttribute Item item, RedirectAttributes redirectAttributes, Model model) {
+    public String addItemV1(@ModelAttribute Item item, RedirectAttributes redirectAttributes, Model model) {
         //검증에 실패하면 뭐가 실패했는지에 대한 정보를 다시 담아서 내리는 로직 필요.
         //검증 오류 결과를 보관
         Map<String, String> errors = new HashMap<>();
